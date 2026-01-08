@@ -1,0 +1,15 @@
+2025-12-24 00:44:52 [INFO] src.client: Initialized ConfluenceClient for https://silverpeak.atlassian.net/wiki (read_only=True)
+2025-12-24 00:44:52 [INFO] src.client: Initialized ConfluenceClient for https://mirasko.atlassian.net/wiki (read_only=False)
+2025-12-24 00:44:52 [INFO] src.copier: No existing state file at .confluence_copy_state.json
+2025-12-24 00:44:52 [INFO] src.copier: Attachment copying enabled
+2025-12-24 00:44:52 [INFO] src.copier: Starting space copy: SES -> SES
+2025-12-24 00:44:53 [INFO] src.copier: Source space: SEs (ID: 354058617)
+2025-12-24 00:44:53 [INFO] src.copier: Dest space: SEs (ID: 17301506)
+2025-12-24 00:44:53 [INFO] src.copier: Fetching pages from source space...
+2025-12-24 00:44:53 [INFO] src.copier: Fetching source page list (metadata)...
+2025-12-24 00:44:54 [INFO] src.copier: Force mode: Processing all 151 source pages
+2025-12-24 00:44:54 [INFO] src.copier: Processing batch of 15 pages (limit: 15)
+2025-12-24 00:44:57 [INFO] src.copier: Found 15 pages in source space
+2025-12-24 00:44:57 [INFO] src.copier: Building page tree...
+2025-12-24 00:44:57 [INFO] src.copier: Built tree with 1 root pages
+2025-12-24 00:44:57 [INFO] src.copier: Fetching attachments for 15 pages...

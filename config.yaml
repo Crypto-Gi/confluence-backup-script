@@ -1,0 +1,63 @@
+# Confluence Content Copier Configuration
+
+# ===========================================
+# SPACE ALLOWLISTS
+# ===========================================
+# Only spaces listed here can be used as source/destination.
+# Leave empty to allow all spaces (not recommended for production).
+
+allowed_source_spaces:
+  - "~6219652fc3454900719951ca"  # Abdul Mir
+  - "ENGINEERING"                # Engineering
+  - "SES"                        # SEs
+
+allowed_destination_spaces: []
+  # - DOCS-COPY
+  # - BACKUP
+
+# ===========================================
+# COPY SETTINGS
+# ===========================================
+
+# Maximum pages to copy in one run (0 = unlimited)
+max_pages: 50
+
+# Delay between API calls in seconds (for rate limiting)
+api_delay_seconds: 0.2
+
+# ===========================================
+# ATTACHMENT SETTINGS
+# ===========================================
+
+# Enable attachment copying (opt-in, overridable via --with-attachments)
+copy_attachments: false
+
+# Maximum attachment size in MB (default: 50 MB)
+max_attachment_size_mb: 500
+
+# Skip attachments that exceed size limit (vs error)
+skip_large_attachments: true
+
+# ===========================================
+# DEPTH CONTROL
+# ===========================================
+
+# Maximum tree depth for copying (0 = unlimited)
+# Overridable via --max-depth
+max_tree_depth: 7
+
+# ===========================================
+# SPACE CREATION
+# ===========================================
+
+# Automatically create destination space if it doesn't exist
+# Overridable via --create-space
+# Default: false (safety first)
+create_space_if_missing: false
+
+# ===========================================
+# SAFETY SETTINGS
+# ===========================================
+
+# Log all API calls for debugging
+verbose_logging: false
